@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Webpage</title>
+    <style>
+        /* Reset some default styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Define styles for the sections */
+        .section {
+            height: 100vh; /* Set the section height to cover the viewport height */
+            background-attachment: fixed; /* Create the parallax effect by fixing the background */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat;
+            background-size: cover; /* Cover the entire section with the background image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c71b1b;
+            font-size: 24px;
+        }
+
+        /* Define styles for individual sections */
+        #section1 {
+            background-image: url('background1.jpg'); /* Replace with your image URL */
+        }
+
+        #section2 {
+            background-image: url('background2.jpg'); /* Replace with your image URL */
+        }
+
+        #section3 {
+            background-image: url('background3.jpg'); /* Replace with your image URL */
+        }
+
+        /* Add more sections as needed */
+
+        /* Additional styling for text content */
+        .section-content {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+        }
+    </style>
+</head>
+<body>
+    <section id="section1" class="section">
+        <div class="section-content">
+            <h1>Section 1</h1>
+            <p>This is the first section of the parallax webpage.</p>
+        </div>
+    </section>
+
+    <section id="section2" class="section">
+        <div class="section-content">
+            <h1>Section 2</h1>
+            <p>This is the second section of the parallax webpage.</p>
+        </div>
+    </section>
+
+    <section id="section3" class="section">
+        <div class="section-content">
+            <h1>Section 3</h1>
+            <p>This is the third section of the parallax webpage.</p>
+        </div>
+    </section>
+
+</body>
+</html>
